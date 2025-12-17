@@ -3,9 +3,12 @@ import logging
 def setup_logging():
     logging.basicConfig(
         level=logging.DEBUG,
-        format='%(asctime)s - %(levelname)s - %(message)s',
+        format="%(asctime)s - %(levelname)s - %(message)s",
         handlers=[
-            logging.FileHandler("task_manager.log"),
+            logging.FileHandler(
+                "task_manager.log",
+                encoding="utf-8"
+            ),
             logging.StreamHandler()
         ]
     )
