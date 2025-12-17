@@ -69,3 +69,4 @@ class OrderProcessor:
     def _validate(self, order):
         if not order or "items" not in order:
             raise InvalidOrderError("Invalid order structure")
+
