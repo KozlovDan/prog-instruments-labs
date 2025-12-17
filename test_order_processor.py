@@ -39,3 +39,4 @@ class TestOrderProcessor(unittest.TestCase):
     def test_invalid_order(self):
         with self.assertRaises(InvalidOrderError):
             self.processor.process_order(None)
+
